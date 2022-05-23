@@ -1,7 +1,6 @@
 import java.io.*;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 public class Main {
@@ -11,23 +10,6 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         return reader.readLine();
     }
-    /*
-    public static String getInfo(String Race, char Ch) {
-        try {
-            File file = new File("info.txt");
-            FileReader fr = new FileReader(file);
-            BufferedReader reader = new BufferedReader(fr);
-            String line = reader.readLine();
-            while (line != null) {
-                System.out.println(line);
-                line = reader.readLine();
-            }
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        return null;
-    }
-     */
     //Замена букв на цифры
     public static String poleNum(String Race, String Pole) throws IOException {
         String PoleNum = Pole;
