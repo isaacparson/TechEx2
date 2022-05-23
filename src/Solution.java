@@ -4,7 +4,7 @@ public class Solution {
 
     public static String getResult(String Pole, String Race) throws IOException {
         int[][] matrixA, matrixB;
-        StringBuilder PoleNum;
+        String PoleNum;
         matrixA = new int[4][4];
         matrixB = new int[4][4];
         int stringCount = 0;
